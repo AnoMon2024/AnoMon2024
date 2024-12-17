@@ -1,0 +1,1 @@
+python3 fattree.py --test 0 --culprit_typ 0 --mem_num 0 --mem 60 --algo dleft --error_ratio 0.5 --window 0.1 --err_flow_ratio 0.25 --flow_group_typ path --flow_group_num 0 --heavy_change 0 --test_ns 0
