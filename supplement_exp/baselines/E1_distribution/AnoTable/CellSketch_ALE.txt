@@ -1,0 +1,2 @@
+Memory usage = 1000000 Bytes
+ALE = 0.776895

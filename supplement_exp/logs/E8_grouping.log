@@ -1,0 +1,143 @@
+=== E8 grouping ablation 08:07:13 ===
+>>> flow_group_typ=subnet 08:07:13
+6 7 10 11 14 15 18 19 
+args Namespace(culprit_typ=0, mem=100.0, algo='dleft', error_ratio=0.5, test=2, mem_num=0, window=0.1, err_flow_ratio=0.25, flow_group_typ='subnet', flow_group_num=0, heavy_change=0, test_ns=0, n_flows=50000, epoch=10.0, all_time=40, outcsv='/data/jjc/AnoMon/AnoMon2024/supplement_exp/results/E8_grouping.csv', tag='grouping_subnet')
+# 0
+poi: [10 14 10 10]
+nor: [3.60448736 7.71132266 4.53427719 5.03665344]
+-------culprit_time-------
+ {0: np.float64(3.6044873615598094), np.int64(10): np.float64(17.71132266220951), np.int64(24): np.float64(28.534277189939978), np.int64(34): np.float64(39.0366534369923)}
+N_switches 20
+hosts--- {32, 33, 34, 35, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31}
+-------fg_map------- dict_keys([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])
+Traceback (most recent call last):
+  File "/data/jjc/AnoMon/AnoMon2024/supplement_exp/src/anomon/sim/workplace/simu/fattree.py", line 509, in <module>
+    culprit_flows, culprit_switches, loop_pair = cer.create_error(flow_group_map.keys(),path_dict,culprit_typ,culprit_num,k)
+  File "/data/jjc/AnoMon/AnoMon2024/supplement_exp/src/anomon/sim/workplace/simu/../utils/create_error.py", line 27, in create_error
+    err_fg = get_err_fg(flow_group,num,path_dict)
+  File "/data/jjc/AnoMon/AnoMon2024/supplement_exp/src/anomon/sim/workplace/simu/../utils/create_error.py", line 17, in get_err_fg
+    if len(path_dict[fg]) != 5:
+KeyError: 12
+    -> exit 1 08:07:14
+>>> flow_group_typ=path 08:07:14
+6 7 10 11 14 15 18 19 
+args Namespace(culprit_typ=0, mem=100.0, algo='dleft', error_ratio=0.5, test=2, mem_num=0, window=0.1, err_flow_ratio=0.25, flow_group_typ='path', flow_group_num=0, heavy_change=0, test_ns=0, n_flows=50000, epoch=10.0, all_time=40, outcsv='/data/jjc/AnoMon/AnoMon2024/supplement_exp/results/E8_grouping.csv', tag='grouping_path')
+# 0
+poi: [14  3  8  8]
+nor: [4.23707487 3.81562907 4.49851365 5.88799193]
+-------culprit_time-------
+ {0: np.float64(4.2370748696137674), np.int64(14): np.float64(17.81562907010955), np.int64(17): np.float64(21.498513653693607), np.int64(25): np.float64(30.88799193253658)}
+N_switches 20
+hosts--- {32, 33, 34, 35, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31}
+-------fg_map------- dict_keys([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47])
+------cul flow ----
+ {1, 11, 14, 22}
+------cul switch ----
+ {14: [3], 1: [0], 22: [0], 11: [0]}
+-------culprit_cnt-------
+ {1: 1047, 11: 1042, 14: 1040, 22: 1081}
+-------culprit_fg-------
+ {1, 11, 14, 22}
+start running
+time 1; now_time: 1 in last: -1
+lala 4 [22, 11, 1, 14]
+recall-- 1.0 precision-- 1.0
+time 2; now_time: 2 in last: -1
+lala 4 [11, 22, 14, 1]
+recall-- 1.0 precision-- 1.0
+time 3; now_time: 3 in last: 2
+lala 4 [1, 11, 14, 22]
+recall-- 1.0 precision-- 1.0
+time 4; now_time: 4 in last: 3
+lala 4 [1, 11, 14, 22]
+recall-- 1.0 precision-- 1.0
+time 5; now_time: 5 in last: 4
+lala 4 [11, 14, 15, 5]
+recall-- 0.5 precision-- 0.5
+time 6; now_time: 6 in last: 5
+lala 4 [39, 12, 10, 13]
+time 7; now_time: 7 in last: -1
+lala 4 [45, 29, 22, 11]
+time 8; now_time: 8 in last: -1
+lala 4 [22, 45, 47, 4]
+time 9; now_time: 9 in last: -1
+lala 4 [45, 4, 25, 44]
+time 10; now_time: 10 in last: -1
+lala 4 [44, 33, 17, 45]
+time 11; now_time: 11 in last: -1
+lala 4 [44, 33, 30, 17]
+time 12; now_time: 12 in last: -1
+lala 4 [44, 39, 33, 28]
+time 13; now_time: 13 in last: -1
+lala 4 [39, 44, 18, 33]
+time 14; now_time: 14 in last: -1
+lala 4 [39, 18, 13, 17]
+time 15; now_time: 15 in last: -1
+lala 4 [39, 13, 12, 18]
+recall-- 0.0 precision-- 0.0
+time 16; now_time: 16 in last: -1
+lala 4 [39, 13, 18, 28]
+recall-- 0.0 precision-- 0.0
+time 17; now_time: 17 in last: 16
+lala 4 [11, 1, 14, 22]
+recall-- 1.0 precision-- 1.0
+time 18; now_time: 18 in last: 17
+lala 4 [11, 1, 20, 14]
+recall-- 0.75 precision-- 0.75
+time 19; now_time: 19 in last: 18
+lala 4 [22, 1, 14, 11]
+recall-- 1.0 precision-- 1.0
+time 20; now_time: 20 in last: 19
+lala 4 [14, 22, 1, 11]
+recall-- 1.0 precision-- 1.0
+time 21; now_time: 21 in last: 20
+lala 4 [22, 14, 11, 1]
+recall-- 1.0 precision-- 1.0
+time 22; now_time: 22 in last: 21
+lala 4 [11, 1, 39, 14]
+recall-- 0.75 precision-- 0.75
+time 23; now_time: 23 in last: 22
+lala 4 [6, 28, 46, 33]
+time 24; now_time: 24 in last: -1
+lala 4 [5, 11, 44, 6]
+time 25; now_time: 25 in last: -1
+lala 4 [44, 42, 38, 26]
+time 26; now_time: 26 in last: -1
+lala 4 [11, 14, 33, 22]
+recall-- 0.75 precision-- 0.75
+time 27; now_time: 27 in last: -1
+lala 4 [11, 14, 22, 13]
+recall-- 0.75 precision-- 0.75
+time 28; now_time: 28 in last: 27
+lala 4 [22, 1, 11, 14]
+recall-- 1.0 precision-- 1.0
+time 29; now_time: 29 in last: 28
+lala 4 [14, 22, 1, 18]
+recall-- 0.75 precision-- 0.75
+time 30; now_time: 30 in last: 29
+lala 4 [22, 11, 14, 1]
+recall-- 1.0 precision-- 1.0
+time 31; now_time: 31 in last: 30
+lala 4 [11, 22, 14, 1]
+recall-- 1.0 precision-- 1.0
+time 32; now_time: 32 in last: 31
+lala 4 [18, 33, 41, 19]
+time 33; now_time: 33 in last: -1
+lala 4 [33, 37, 41, 19]
+time 34; now_time: 34 in last: -1
+lala 4 [37, 21, 40, 32]
+time 35; now_time: 35 in last: -1
+lala 4 [37, 13, 26, 16]
+time 36; now_time: 36 in last: -1
+lala 4 [26, 3, 24, 37]
+time 37; now_time: 37 in last: -1
+lala 4 [0, 37, 24, 41]
+time 38; now_time: 38 in last: -1
+lala 4 [0, 21, 24, 19]
+time 39; now_time: 39 in last: -1
+lala 4 [32, 26, 24, 19]
+time 40; now_time: 40 in last: -1
+lala 4 [19, 26, 32, 0]
+RESULT_ROW: grouping_path,dleft,black,path,50000,4,100.0,10.0,40,0.25,0.1,2,0.0000,0.0000,0.0000,0.8026,0.8026,0.8026
+    -> exit 0 08:29:38
+=== E8 done 08:29:38 ===

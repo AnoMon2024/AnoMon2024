@@ -1,0 +1,54 @@
+start: 0 end: 1
+start: 14 end: 28.342915257523142
+start: 22 end: 27.39632780214756
+start: 31 end: 39.83844068194711
+reported 4 [19, 12, 0, 33]
+correct 4 {0, 33, 19, 12}
+reported 4 [22, 23, 39, 6]
+correct 4 {0, 33, 19, 12}
+reported 4 [22, 23, 2, 8]
+correct 4 {0, 33, 19, 12}
+reported 4 [12, 19, 33, 0]
+correct 4 {0, 33, 19, 12}
+reported 4 [0, 19, 12, 33]
+correct 4 {0, 33, 19, 12}
+reported 4 [0, 19, 33, 18]
+correct 4 {0, 33, 19, 12}
+reported 4 [33, 0, 12, 19]
+correct 4 {0, 33, 19, 12}
+reported 4 [19, 0, 33, 21]
+correct 4 {0, 33, 19, 12}
+reported 4 [33, 0, 12, 19]
+correct 4 {0, 33, 19, 12}
+reported 4 [19, 33, 0, 2]
+correct 4 {0, 33, 19, 12}
+reported 4 [19, 33, 0, 12]
+correct 4 {0, 33, 19, 12}
+reported 4 [12, 0, 19, 36]
+correct 4 {0, 33, 19, 12}
+reported 4 [19, 33, 0, 12]
+correct 4 {0, 33, 19, 12}
+reported 4 [0, 33, 12, 19]
+correct 4 {0, 33, 19, 12}
+reported 4 [0, 12, 33, 19]
+correct 4 {0, 33, 19, 12}
+reported 4 [0, 15, 3, 12]
+correct 4 {0, 33, 19, 12}
+reported 4 [19, 0, 25, 27]
+correct 4 {0, 33, 19, 12}
+reported 4 [0, 19, 27, 3]
+correct 4 {0, 33, 19, 12}
+reported 4 [12, 33, 19, 0]
+correct 4 {0, 33, 19, 12}
+reported 4 [19, 33, 12, 0]
+correct 4 {0, 33, 19, 12}
+reported 4 [0, 33, 19, 12]
+correct 4 {0, 33, 19, 12}
+reported 4 [33, 0, 19, 12]
+correct 4 {0, 33, 19, 12}
+reported 4 [33, 12, 0, 19]
+correct 4 {0, 33, 19, 12}
+reported 4 [33, 0, 12, 8]
+correct 4 {0, 33, 19, 12}
+reported 4 [33, 12, 19, 0]
+correct 4 {0, 33, 19, 12}

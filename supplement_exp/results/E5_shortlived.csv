@@ -1,0 +1,6 @@
+tag,algo,culprit_typ,fg_typ,n_flows,k,mem,epoch,all_time,err_flow_ratio,window,test,loc_prec,loc_recall,loc_f1,afg_prec,afg_recall,afg_f1
+shortlived_er0.05,dleft,black,path,50000,4,100.0,10.0,40,0.25,0.1,2,0.0000,0.0000,0.0000,0.5833,0.5833,0.5833
+shortlived_er0.1,dleft,black,path,50000,4,100.0,10.0,40,0.25,0.1,2,0.0000,0.0000,0.0000,0.2083,0.2083,0.2083
+shortlived_er0.25,dleft,black,path,50000,4,100.0,10.0,40,0.25,0.1,2,0.0000,0.0000,0.0000,0.5000,0.5000,0.5000
+shortlived_er0.5,dleft,black,path,50000,4,100.0,10.0,40,0.25,0.1,2,0.0000,0.0000,0.0000,0.8750,0.8750,0.8750
+shortlived_er1.0,dleft,black,path,50000,4,100.0,10.0,40,0.25,0.1,2,0.0000,0.0000,0.0000,0.8100,0.8100,0.8100

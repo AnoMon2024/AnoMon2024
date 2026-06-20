@@ -1,0 +1,3 @@
+tag,algo,culprit_typ,fg_typ,n_flows,k,mem,epoch,all_time,err_flow_ratio,window,test,loc_prec,loc_recall,loc_f1,afg_prec,afg_recall,afg_f1
+memscaled_nf25000_mem100,dleft,black,path,25000,4,100.0,10.0,40,0.25,0.1,0,0.7045,0.4635,0.5592,0.0000,0.0000,0.0000
+memscaled_nf50000_mem200,dleft,black,path,50000,4,200.0,10.0,40,0.25,0.1,0,0.7933,0.2235,0.3488,0.0000,0.0000,0.0000

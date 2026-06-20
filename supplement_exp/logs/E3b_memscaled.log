@@ -1,0 +1,342 @@
+=== E3b mem-scaled sweep start 05:29:10 ===
+>>> n_flows=25000 mem=100 05:29:10
+6 7 10 11 14 15 18 19 
+args Namespace(culprit_typ=0, mem=100.0, algo='dleft', error_ratio=0.5, test=0, mem_num=0, window=0.1, err_flow_ratio=0.25, flow_group_typ='path', flow_group_num=0, heavy_change=0, test_ns=0, n_flows=25000, epoch=10.0, all_time=40, outcsv='/data/jjc/AnoMon/AnoMon2024/supplement_exp/results/E3b_memscaled.csv', tag='memscaled_nf25000_mem100')
+# 0
+poi: [13 11 10  7]
+nor: [5.66377896 5.27137131 5.01072858 4.56349947]
+-------culprit_time-------
+ {0: np.float64(5.663778964230299), np.int64(13): np.float64(18.271371314287425), np.int64(24): np.float64(29.010728577335083), np.int64(34): np.float64(38.563499473517645)}
+N_switches 20
+hosts--- {32, 33, 34, 35, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31}
+-------fg_map------- dict_keys([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47])
+------cul flow ----
+ {24, 16, 37, 46}
+------cul switch ----
+ {24: [2], 46: [3], 16: [1], 37: [0]}
+-------culprit_cnt-------
+ {24: 512, 16: 517, 37: 508, 46: 521}
+-------culprit_fg-------
+ {16, 24, 37, 46}
+start running
+time 1; now_time: 1 in last: -1
+lala 4 [16, 37, 24, 46]
+time 2; now_time: 2 in last: -1
+traversing: sketch report bd:  0.043344 Mbps
+recall 0.6822157434402333 precision 0.9304174950298211
+lala 4 [37, 46, 16, 24]
+time 3; now_time: 3 in last: 2
+traversing: sketch report bd:  0.086688 Mbps
+recall 0.6822157434402333 precision 0.9304174950298211
+lala 4 [24, 16, 46, 37]
+time 4; now_time: 4 in last: 3
+traversing: sketch report bd:  0.13003199999999998 Mbps
+recall 0.6822157434402333 precision 0.9304174950298211
+lala 4 [46, 24, 37, 16]
+time 5; now_time: 5 in last: 4
+traversing: sketch report bd:  0.173376 Mbps
+recall 0.6822157434402333 precision 0.9304174950298211
+lala 4 [37, 24, 16, 3]
+time 6; now_time: 6 in last: 5
+traversing: sketch report bd:  0.25015679999999996 Mbps
+recall 0.4713313896987366 precision 0.7911908646003263
+lala 4 [37, 24, 46, 16]
+time 7; now_time: 7 in last: 6
+lala 4 [44, 4, 15, 17]
+time 8; now_time: 8 in last: -1
+lala 4 [44, 21, 15, 4]
+time 9; now_time: 9 in last: -1
+lala 4 [42, 21, 44, 15]
+time 10; now_time: 10 in last: -1
+lala 4 [21, 14, 42, 35]
+time 11; now_time: 11 in last: -1
+lala 4 [7, 31, 21, 25]
+time 12; now_time: 12 in last: -1
+lala 4 [46, 21, 7, 6]
+time 13; now_time: 13 in last: -1
+lala 4 [35, 2, 44, 22]
+time 14; now_time: 14 in last: -1
+lala 4 [15, 22, 7, 44]
+time 15; now_time: 15 in last: -1
+traversing: sketch report bd:  7.672575999999999 Mbps
+recall 0.0 precision 0.0
+lala 4 [46, 6, 7, 2]
+time 16; now_time: 16 in last: 15
+traversing: sketch report bd:  8.0347392 Mbps
+recall 0.12487852283770651 precision 0.31965174129353235
+lala 4 [24, 46, 37, 4]
+time 17; now_time: 17 in last: 16
+traversing: sketch report bd:  8.081247999999999 Mbps
+recall 0.34791059280855197 precision 0.8164196123147093
+lala 4 [24, 16, 46, 37]
+time 18; now_time: 18 in last: 17
+traversing: sketch report bd:  8.124592 Mbps
+recall 0.6822157434402333 precision 0.9304174950298211
+lala 4 [24, 46, 16, 37]
+time 19; now_time: 19 in last: 18
+traversing: sketch report bd:  8.1869248 Mbps
+recall 0.6190476190476191 precision 0.9306062819576333
+lala 4 [46, 25, 47, 45]
+time 20; now_time: 20 in last: 19
+lala 4 [43, 21, 41, 38]
+time 21; now_time: 21 in last: -1
+lala 4 [41, 43, 27, 40]
+time 22; now_time: 22 in last: -1
+lala 4 [41, 6, 45, 40]
+time 23; now_time: 23 in last: -1
+lala 4 [39, 45, 6, 11]
+time 24; now_time: 24 in last: -1
+lala 4 [39, 11, 6, 36]
+time 25; now_time: 25 in last: -1
+lala 4 [39, 6, 11, 5]
+time 26; now_time: 26 in last: -1
+traversing: sketch report bd:  13.337430399999999 Mbps
+recall 0.0 precision 0.0
+lala 4 [39, 6, 24, 11]
+time 27; now_time: 27 in last: 26
+traversing: sketch report bd:  13.4239808 Mbps
+recall 0.1477162293488824 precision 0.3244397011739594
+lala 4 [16, 46, 37, 24]
+time 28; now_time: 28 in last: 27
+traversing: sketch report bd:  13.4673248 Mbps
+recall 0.6822157434402333 precision 0.9304174950298211
+lala 4 [16, 37, 46, 24]
+time 29; now_time: 29 in last: 28
+traversing: sketch report bd:  13.5106688 Mbps
+recall 0.6822157434402333 precision 0.9304174950298211
+lala 4 [16, 46, 24, 37]
+time 30; now_time: 30 in last: 29
+traversing: sketch report bd:  13.573001600000001 Mbps
+recall 0.6190476190476191 precision 0.9306062819576333
+lala 4 [24, 15, 1, 2]
+time 31; now_time: 31 in last: 30
+lala 4 [29, 35, 8, 34]
+time 32; now_time: 32 in last: -1
+lala 4 [29, 8, 18, 36]
+time 33; now_time: 33 in last: -1
+lala 4 [18, 36, 27, 34]
+time 34; now_time: 34 in last: -1
+lala 4 [36, 41, 46, 29]
+time 35; now_time: 35 in last: -1
+lala 4 [46, 41, 36, 30]
+time 36; now_time: 36 in last: -1
+traversing: sketch report bd:  18.1629248 Mbps
+recall 0.061224489795918366 precision 0.28442437923250563
+lala 4 [46, 36, 37, 41]
+time 37; now_time: 37 in last: 36
+traversing: sketch report bd:  18.271216000000003 Mbps
+recall 0.2759961127308066 precision 0.6147186147186147
+lala 4 [16, 46, 24, 37]
+time 38; now_time: 38 in last: 37
+traversing: sketch report bd:  18.31456 Mbps
+recall 0.6822157434402333 precision 0.9304174950298211
+lala 4 [37, 46, 16, 24]
+time 39; now_time: 39 in last: 38
+traversing: sketch report bd:  18.357903999999998 Mbps
+recall 0.6822157434402333 precision 0.9304174950298211
+lala 4 [46, 37, 16, 24]
+time 40; now_time: 40 in last: 39
+lala 4 [46, 41, 22, 23]
+RESULT_ROW: memscaled_nf25000_mem100,dleft,black,path,25000,4,100.0,10.0,40,0.25,0.1,0,0.7045,0.4635,0.5592,0.0000,0.0000,0.0000
+    -> exit 0 05:39:40
+>>> n_flows=50000 mem=200 05:39:40
+6 7 10 11 14 15 18 19 
+args Namespace(culprit_typ=0, mem=200.0, algo='dleft', error_ratio=0.5, test=0, mem_num=0, window=0.1, err_flow_ratio=0.25, flow_group_typ='path', flow_group_num=0, heavy_change=0, test_ns=0, n_flows=50000, epoch=10.0, all_time=40, outcsv='/data/jjc/AnoMon/AnoMon2024/supplement_exp/results/E3b_memscaled.csv', tag='memscaled_nf50000_mem200')
+# 0
+poi: [ 9 13  9 10]
+nor: [6.77566748 7.63883611 5.13518275 5.64488354]
+-------culprit_time-------
+ {0: np.float64(6.775667476651659), np.int64(9): np.float64(16.638836108060374), np.int64(22): np.float64(27.135182750864463), np.int64(31): np.float64(36.64488354085493)}
+N_switches 20
+hosts--- {32, 33, 34, 35, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31}
+-------fg_map------- dict_keys([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47])
+------cul flow ----
+ {8, 28, 30, 36}
+------cul switch ----
+ {8: [3], 28: [3], 30: [3], 36: [1]}
+-------culprit_cnt-------
+ {8: 1047, 28: 1093, 30: 1020, 36: 1027}
+-------culprit_fg-------
+ {8, 28, 30, 36}
+start running
+time 1; now_time: 1 in last: -1
+lala 4 [36, 28, 30, 8]
+time 2; now_time: 2 in last: -1
+traversing: sketch report bd:  0.37496 Mbps
+recall 0.27465966085502747 precision 0.9289176090468497
+lala 4 [28, 30, 8, 36]
+time 3; now_time: 3 in last: 2
+traversing: sketch report bd:  0.74992 Mbps
+recall 0.27465966085502747 precision 0.9289176090468497
+lala 4 [8, 28, 30, 36]
+time 4; now_time: 4 in last: 3
+traversing: sketch report bd:  1.1248799999999999 Mbps
+recall 0.27465966085502747 precision 0.9289176090468497
+lala 4 [28, 36, 8, 30]
+time 5; now_time: 5 in last: 4
+traversing: sketch report bd:  1.49984 Mbps
+recall 0.27465966085502747 precision 0.9289176090468497
+lala 4 [36, 8, 28, 30]
+time 6; now_time: 6 in last: 5
+traversing: sketch report bd:  1.8748 Mbps
+recall 0.27465966085502747 precision 0.9289176090468497
+lala 4 [28, 30, 8, 36]
+time 7; now_time: 7 in last: 6
+traversing: sketch report bd:  2.2497599999999998 Mbps
+recall 0.27465966085502747 precision 0.9289176090468497
+lala 4 [28, 8, 36, 30]
+time 8; now_time: 8 in last: 7
+lala 4 [41, 25, 36, 22]
+time 9; now_time: 9 in last: -1
+lala 4 [36, 22, 25, 44]
+time 10; now_time: 10 in last: -1
+lala 4 [36, 20, 0, 8]
+time 11; now_time: 11 in last: -1
+traversing: sketch report bd:  9.3672576 Mbps
+recall 0.12013374731311201 precision 0.7702909647779479
+lala 4 [8, 36, 30, 20]
+time 12; now_time: 12 in last: 11
+traversing: sketch report bd:  9.7639584 Mbps
+recall 0.23787914974922378 precision 0.7427293064876958
+lala 4 [36, 28, 8, 30]
+time 13; now_time: 13 in last: 12
+traversing: sketch report bd:  10.1389184 Mbps
+recall 0.27465966085502747 precision 0.9289176090468497
+lala 4 [8, 28, 36, 30]
+time 14; now_time: 14 in last: 13
+traversing: sketch report bd:  10.5138784 Mbps
+recall 0.27465966085502747 precision 0.9289176090468497
+lala 4 [30, 28, 36, 8]
+time 15; now_time: 15 in last: 14
+traversing: sketch report bd:  10.888838400000001 Mbps
+recall 0.27465966085502747 precision 0.9289176090468497
+lala 4 [28, 8, 36, 30]
+time 16; now_time: 16 in last: 15
+traversing: sketch report bd:  11.2637984 Mbps
+recall 0.27465966085502747 precision 0.9289176090468497
+lala 4 [36, 28, 8, 30]
+time 17; now_time: 17 in last: 16
+traversing: sketch report bd:  11.6387584 Mbps
+recall 0.27465966085502747 precision 0.9289176090468497
+lala 4 [28, 36, 30, 7]
+time 18; now_time: 18 in last: 17
+lala 4 [3, 15, 21, 27]
+time 19; now_time: 19 in last: -1
+lala 4 [2, 39, 27, 34]
+time 20; now_time: 20 in last: -1
+lala 4 [42, 19, 39, 22]
+time 21; now_time: 21 in last: -1
+lala 4 [39, 42, 22, 19]
+time 22; now_time: 22 in last: -1
+lala 4 [42, 39, 22, 12]
+time 23; now_time: 23 in last: -1
+lala 4 [42, 31, 27, 33]
+time 24; now_time: 24 in last: -1
+traversing: sketch report bd:  31.6104352 Mbps
+recall 0.0 precision 0.0
+lala 4 [34, 42, 43, 30]
+time 25; now_time: 25 in last: 24
+traversing: sketch report bd:  32.8346624 Mbps
+recall 0.0929066157153093 precision 0.6068642745709828
+lala 4 [28, 30, 8, 36]
+time 26; now_time: 26 in last: 25
+traversing: sketch report bd:  33.2096224 Mbps
+recall 0.27465966085502747 precision 0.9289176090468497
+lala 4 [8, 28, 36, 30]
+time 27; now_time: 27 in last: 26
+traversing: sketch report bd:  33.5845824 Mbps
+recall 0.27465966085502747 precision 0.9289176090468497
+lala 4 [36, 30, 28, 8]
+time 28; now_time: 28 in last: 27
+traversing: sketch report bd:  34.393119999999996 Mbps
+recall 0.2061141628851206 precision 0.8638638638638638
+lala 4 [36, 8, 39, 30]
+time 29; now_time: 29 in last: 28
+lala 4 [34, 29, 24, 43]
+time 30; now_time: 30 in last: -1
+lala 4 [21, 34, 17, 25]
+time 31; now_time: 31 in last: -1
+lala 4 [28, 17, 21, 44]
+time 32; now_time: 32 in last: -1
+lala 4 [44, 21, 17, 0]
+time 33; now_time: 33 in last: -1
+traversing: sketch report bd:  46.458576 Mbps
+recall 0.0 precision 0.0
+lala 4 [34, 28, 30, 40]
+time 34; now_time: 34 in last: 33
+traversing: sketch report bd:  46.9950784 Mbps
+recall 0.08932409839980893 precision 0.3995726495726496
+lala 4 [36, 8, 30, 28]
+time 35; now_time: 35 in last: 34
+traversing: sketch report bd:  47.3700384 Mbps
+recall 0.27465966085502747 precision 0.9289176090468497
+lala 4 [28, 36, 30, 8]
+time 36; now_time: 36 in last: 35
+traversing: sketch report bd:  47.7449984 Mbps
+recall 0.27465966085502747 precision 0.9289176090468497
+lala 4 [30, 28, 36, 8]
+time 37; now_time: 37 in last: 36
+traversing: sketch report bd:  48.1199584 Mbps
+recall 0.27465966085502747 precision 0.9289176090468497
+lala 4 [36, 30, 8, 28]
+time 38; now_time: 38 in last: 37
+lala 4 [18, 30, 41, 21]
+time 39; now_time: 39 in last: -1
+lala 4 [41, 0, 9, 19]
+time 40; now_time: 40 in last: -1
+lala 4 [45, 18, 43, 0]
+RESULT_ROW: memscaled_nf50000_mem200,dleft,black,path,50000,4,200.0,10.0,40,0.25,0.1,0,0.7933,0.2235,0.3488,0.0000,0.0000,0.0000
+    -> exit 0 06:01:25
+>>> n_flows=100000 mem=400 06:01:25
+6 7 10 11 14 15 18 19 
+args Namespace(culprit_typ=0, mem=400.0, algo='dleft', error_ratio=0.5, test=0, mem_num=0, window=0.1, err_flow_ratio=0.25, flow_group_typ='path', flow_group_num=0, heavy_change=0, test_ns=0, n_flows=100000, epoch=10.0, all_time=40, outcsv='/data/jjc/AnoMon/AnoMon2024/supplement_exp/results/E3b_memscaled.csv', tag='memscaled_nf100000_mem400')
+# 0
+poi: [ 8 14  8 12]
+nor: [5.39835075 1.71424119 7.39064135 3.00977317]
+-------culprit_time-------
+ {0: np.float64(5.398350750375498), np.int64(8): np.float64(9.71424118728521), np.int64(22): np.float64(29.390641354357562), np.int64(30): np.float64(33.009773170054835)}
+N_switches 20
+hosts--- {32, 33, 34, 35, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31}
+-------fg_map------- dict_keys([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47])
+------cul flow ----
+ {32, 41, 26, 3}
+------cul switch ----
+ {32: [2], 3: [1], 41: [1], 26: [0]}
+-------culprit_cnt-------
+ {32: 2157, 41: 2136, 26: 2016, 3: 2088}
+-------culprit_fg-------
+ {32, 41, 26, 3}
+start running
+time 1; now_time: 1 in last: -1
+lala 4 [32, 41, 26, 3]
+time 2; now_time: 2 in last: -1
+traversing: sketch report bd:  1.447552 Mbps
+recall 0.15755627009646303 precision 0.7989130434782609
+lala 4 [26, 3, 41, 32]
+time 3; now_time: 3 in last: 2
+traversing: sketch report bd:  2.895104 Mbps
+recall 0.15755627009646303 precision 0.7989130434782609
+lala 4 [3, 32, 41, 26]
+time 4; now_time: 4 in last: 3
+traversing: sketch report bd:  4.342656 Mbps
+recall 0.15755627009646303 precision 0.7989130434782609
+lala 4 [3, 32, 26, 41]
+time 5; now_time: 5 in last: 4
+traversing: sketch report bd:  5.790208 Mbps
+recall 0.15755627009646303 precision 0.7989130434782609
+lala 4 [41, 32, 26, 3]
+time 6; now_time: 6 in last: 5
+traversing: sketch report bd:  8.7102176 Mbps
+recall 0.12218649517684887 precision 0.6918408631153068
+lala 4 [41, 13, 39, 26]
+time 7; now_time: 7 in last: 6
+lala 4 [47, 6, 36, 21]
+time 8; now_time: 8 in last: -1
+lala 4 [5, 45, 8, 6]
+time 9; now_time: 9 in last: -1
+lala 4 [45, 32, 18, 33]
+time 10; now_time: 10 in last: -1
+traversing: sketch report bd:  31.3214752 Mbps
+recall 0.0 precision 0.0
+lala 4 [32, 41, 3, 8]
+time 11; 

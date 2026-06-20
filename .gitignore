@@ -1,0 +1,35 @@
+# ---- compiled C/C++ artifacts ----
+*.o
+*.obj
+*.a
+*.so
+*.out
+main
+run_e1
+run_e4
+run_e7
+run_e9
+run_e3coverage
+**/build/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# ---- large data / traces / logs (regenerate locally) ----
+*.dat
+*.pcap
+traces/*
+!traces/.gitkeep
+**/simu/log*.txt
+logs/*.log
+*.tmp
+
+# ---- LaTeX / editor cruft ----
+*.aux
+*.bbl
+*.blg
+*.synctex.gz
+.DS_Store
